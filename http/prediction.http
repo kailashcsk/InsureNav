@@ -1,0 +1,10 @@
+curl -X POST http://127.0.0.1:5000/predict \
+    -H "Content-Type: application/json" \
+    -d '{
+        "person_age": [30],
+        "person_income": [23000],
+        "person_home_ownership": ["OWN"],
+        "person_emp_length": [5],
+        "loan_intent": ["PERSONAL"],
+        "loan_grade": ["A"]
+    }'

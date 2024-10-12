@@ -1,0 +1,8 @@
+curl -X POST http://127.0.0.1:5000/recommend \
+    -H "Content-Type: application/json" \
+    -d '{
+        "type": "Popularity", 
+        "insurance_type": "General", 
+        "min_clients": 10, 
+        "num_recommendations": 5
+    }'
